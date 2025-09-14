@@ -1,0 +1,141 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f7faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #004080;
+}
+
+/* Header / Navbar */
+header {
+  background: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 12px;
+  transition: background 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+  background: #0066cc;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,64,128,0.7), rgba(0,64,128,0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover no-repeat;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #ffcc00;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  background: #e6b800;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Notice Popup */
+.notice {
+  width: 350px;
+  padding: 20px;
+  background: #fff3cd;
+  border: 2px solid #ffeeba;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  position: fixed;
+  top: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.notice.show {
+  top: 120px;
+  opacity: 1;
+}
+
+/* Notice Button Styling */
+.notice button {
+  margin-top: 15px;
+  padding: 8px 14px;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notice button:hover {
+  background: #0066cc;
+}

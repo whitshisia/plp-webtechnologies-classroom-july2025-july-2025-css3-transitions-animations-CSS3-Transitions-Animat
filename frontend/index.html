@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise High School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">🌅 Sunrise High School</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Welcome to Sunrise High School</h1>
+    <p>“Nurturing Minds, Shaping Futures”</p>
+    <button class="cta-btn" onclick="toggleNotice()">View Announcement</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Sunrise High School has been providing quality education since 1985. 
+      Our mission is to inspire students to achieve academic excellence, 
+      develop leadership skills, and serve the community with pride.
+    </p>
+  </section>
+
+  <!-- Academics Section -->
+  <section id="academics">
+    <h2>Academics</h2>
+    <p>
+      We offer a wide range of academic programs in sciences, arts, and sports. 
+      Our teachers use innovative teaching methods to ensure holistic learning.
+    </p>
+    <button onclick="showGrade(92)">Check Example Grade</button>
+    <p id="grade-output"></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@sunrisehigh.edu</p>
+    <p>Phone: (555) 123-4567</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sunrise High School | All Rights Reserved</p>
+  </footer>
+
+  <!-- Notice Popup -->
+  <div id="notice" class="notice">
+    <h3>📢 School Announcement</h3>
+    <p>Sports Day will be held on Friday at 9 AM on the school field. All are welcome!</p>
+    <button onclick="toggleNotice()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
